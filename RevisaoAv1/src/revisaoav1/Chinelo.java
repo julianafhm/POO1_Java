@@ -1,27 +1,34 @@
 package revisaoav1;
 import java.util.Scanner;
+
 public class Chinelo extends Calcado {
-    public boolean acessorio, tiras;
+    boolean acessorio, tiras;
+    
     public Chinelo(){}
     public Chinelo(String m, String c, double p, int t, boolean a, boolean tr){
         super(m, c, p, t);
-        acessorio = a;
-        tiras = tr;
+        setAcessorio(a);
+        setTiras(tr);
     }
-    public void setAcessorio(boolean acessorio){
-        this.acessorio = acessorio;
-    }
+    
     public boolean getAcessorio(){
         return acessorio;
     }
-
-    public void setTiras(boolean tiras){
-        this.tiras = tiras;
+    
+    public void setAcessorio(boolean acessorio){
+        this.acessorio = acessorio;
     }
+
+    
     public boolean getTiras(){
         return tiras;
     }
+    
+    public void setTiras(boolean tiras){
+        this.tiras = tiras;
+    }
 
+    
     @Override
     public void imprimir(){
         super.imprimir();
@@ -36,6 +43,7 @@ public class Chinelo extends Calcado {
         System.out.println("n possui tiras");
         }
     }   
+    @Override
     public void entrada(){
         super.entrada();
         Scanner ent = new Scanner(System.in);
