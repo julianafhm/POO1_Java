@@ -52,7 +52,7 @@ public class Calcado {
         System.out.println("Marca: " + getMarca());
         System.out.println("Preço: " + getPreco());
         System.out.println("Cor: " + getCor());
-        System.out.println("Tamanho" + getTamanho());
+        System.out.println("Tamanho: " + getTamanho());
     }
     public void entrada(){
         Scanner ent = new Scanner (System.in);
