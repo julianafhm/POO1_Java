@@ -23,9 +23,9 @@ public class Tipo extends Calcado{
     public void imprimir(){
         super.imprimir();
         if (cadarco){
-            System.out.println("possui cadarco");
+            System.out.println("Possui cadarço");
         }  else{
-        System.out.println("não possui cadarco");
+        System.out.println("Não possui cadarço");
         }
      }
 
@@ -41,6 +41,8 @@ public class Tipo extends Calcado{
             setCadarco(false);
         }   
     }
+    
+    
     public void cadastrar(String m, String c, double p, int t, boolean cd){
          super.cadastrar(m, c, p, t);
          setCadarco(cd);
