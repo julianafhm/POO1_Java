@@ -1,5 +1,4 @@
 package revisaoav1;
-
 import java.util.Scanner;
  
 public class Tenis extends Tipo{
